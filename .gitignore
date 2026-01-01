@@ -1,0 +1,37 @@
+# Node modules and coffee build cache
+node_modules/
+lib/
+dist/
+*.js
+*.js.map
+
+# CoffeeScript data files and backups
+kvstore_data.json
+kvstore_backup_*.json
+backup_*.json
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor/OS system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Test output or coverage
+coverage/
+test-output/
+*.cov
+
+# Miscellaneous
+*.bak
+*.tmp
+*.orig
