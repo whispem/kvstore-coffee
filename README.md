@@ -6,8 +6,6 @@
 
 ---
 
-![coffee](https://em-content.zobj.net/source/microsoft-teams/363/hot-beverage_2615-fe0f.png)
-
 > **Ever dreamed of storing your data in a delicious, barista-grade backend?  
 > Tired of boring, modern languages and wanted some retro-fun fueled by JavaScript’s most aromatic cousin?  
 > Welcome to kvstore-coffee!**
