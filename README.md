@@ -132,6 +132,5 @@ A: Only if you bring donuts.
 
 ---
 
-Try it, show it to your favorite hipster dev, and  
-store your secrets in an artisanal, hand-crafted JS backend.  
+Try it, show it to your favorite hipster dev, and store your secrets in an artisanal, hand-crafted JS backend.  
 **kvstore-coffee**: For when you want your keys fresh and your values well-roasted.
