@@ -2,36 +2,36 @@
 
 ![Not Sponsored by Starbucks](https://img.shields.io/badge/Not%20Sponsored%20by-Starbucks%E2%84%A2-brightgreen?logo=starbucks)
 
-### A minimalist **Key/Value Store server**... in pure CoffeeScript, *just because the name is too good to pass up.*
+A minimalist Key/Value Store server built in pure CoffeeScript.  
+Because the name made me laugh, and sometimes that's all the reason you need.
 
 ---
 
-> **Ever dreamed of storing your data in a delicious, barista-grade backend?  
-> Tired of boring, modern languages and wanted some retro-fun fueled by JavaScript’s most aromatic cousin?  
-> Welcome to kvstore-coffee!**
+> Ever dreamed of storing your data in a barista-grade backend?  
+> Wanted some retro-fun fueled by JavaScript’s most aromatic cousin?  
+> Welcome to kvstore-coffee !
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-- 🛠 **/set, /get, /del, /all, /clear, /stats** – your classic KV endpoints, fresh-brewed.
-- ⏳ *TTL support* – keys can expire, just like your energy on Monday mornings.
-- 💾 *Data persists on disk* (`kvstore_data.json`) – don't trust RAM? We got you.
-- 🧹 `/clear` – spill your cup, erase everything.
-- 📊 `/stats` – because every barista needs to know how many keys are in the pot.
-- 🤖 *Test suite* – because even joke projects deserve real tests.
-- 🥤 **/latte (Easter egg)** – just for those who crave some caffeinated JSON.
+- `/set`, `/get`, `/del`, `/all`, `/clear`, `/stats` – classic KV endpoints, fresh-brewed
+- TTL support – keys can expire, like your energy on Monday mornings
+- Persistence to disk (`kvstore_data.json`) – don't trust RAM? We got you
+- `/latte` (Easter egg) – for those who crave caffeinated JSON
+- Full test suite, because even meme projects deserve it
+
+---
 
 ## ☕️ Why CoffeeScript?
-Because... CoffeeScript.
-- The name is funny.
-- No curly braces, no semicolons, pure indentation.
-- It’s JavaScript, but hipster.  
-- It smells like startup HN posts from 2012.
+- The name alone deserves a project
+- No curly braces, no semicolons: pure indentation
+- JavaScript, but hipster
+- Retro startup HN vibes circa 2012
 
 ---
 
-## 🏁 Quickstart
+## 🚀 Quickstart
 
 ```bash
 npm install -g coffeescript
@@ -40,7 +40,7 @@ cd kvstore-coffee
 npm start
 ```
 
-Or old school:
+Or, if you want to go old school:
 ```bash
 coffee src/kvstore.coffee
 ```
@@ -54,22 +54,19 @@ curl "http://127.0.0.1:3000/set?key=foo&val=bar&ttl=10"   # Store foo=bar for 10
 curl "http://127.0.0.1:3000/get?key=foo"                  # Retrieve value for foo
 curl "http://127.0.0.1:3000/del?key=foo"                  # Delete foo
 curl "http://127.0.0.1:3000/all"                          # Get all keys/values
-curl "http://127.0.0.1:3000/stats"                        # Some ‘productivity’ stats
-curl "http://127.0.0.1:3000/clear"                        # Pour out your data
-
-# Easter egg
-curl "http://127.0.0.1:3000/latte"                        # Get your barista JSON
+curl "http://127.0.0.1:3000/stats"                        # Get stats
+curl "http://127.0.0.1:3000/clear"                        # Clear the store
+curl "http://127.0.0.1:3000/latte"                        # Hipster JSON surprise
 ```
 
 ---
 
-## 🥤 /latte Endpoint
+## 🥤 `/latte` Endpoint
 
-Ever needed an artisanal JSON latte?  
-This project has an **`/latte`** endpoint, which returns a hand-crafted beverage recipe in JSON –  
-because *why not* ?
+Need a break? Try the `/latte` endpoint.  
+Returns a special JSON recipe for a Caffè Latte — because why not?
 
-Example response:
+Example:
 ```json
 {
   "beverage": "Caffè Latte",
@@ -87,51 +84,53 @@ Example response:
 ```bash
 npm test
 ```
-Or for unit tests:
+Or directly:
 ```bash
 coffee test/kvstore_spec.coffee
 ```
 
 ---
 
-## 🧠 “Architecture”
+## 🗃️ Architecture
 
-- `src/kvstore.coffee` — The (coffee) server
-- `src/storage.coffee` — Internal bean jar (store/TTL/persistence logic)
-- `src/utils.coffee`   — Helper espresso shots (key/value validators)
-- `test/` — Where we check the blend
-- `scripts/` — Backup/restore tools for true connoisseurs
+- `src/kvstore.coffee` — HTTP server and routing
+- `src/storage.coffee` — Internal store with TTL and persistence
+- `src/utils.coffee`   — Key/value validation helpers
+- `test/`              — Tests for your blend
+- `scripts/`           — Backup/restore tools
 
 ---
 
 ## ⚠️ Disclaimer
 
-☕️ *Not sponsored by Starbucks™, but we’re open to free macchiatos.*  
+☕️ *Not sponsored by Starbucks™, but open to free macchiatos.*  
 All resemblance to coffee chains is purely coincidental.  
 Any caffeine-fueled bugs are not endorsed (or compensated) by Starbucks, unfortunately.
 
+> **If you are Starbucks legal and found this, please contact me — I’ll buy you a coffee.**
+
 ---
 
-## 📝 License
+## 📄 License
 
 MIT.  
-You are free to fork, remix, and brag about running CoffeeScript in 2026.
+Fork, remix, and brag about running CoffeeScript in 2026.
 
 ---
 
-## 🍩 FAQ
+## FAQ
 
-**Q : Is this project serious ?**  
-A : About as serious as a double ristretto at 3am.
+**Q: Is this project serious?**  
+A: About as serious as a double ristretto at 3am.
 
-**Q : Why not TypeScript?**  
-A : Because “kvstore-typescript” isn’t half as funny.
+**Q: Why not TypeScript?**  
+A: “kvstore-typescript” doesn’t have the same flavor.
 
-**Q : Will you maintain this in production?**  
-A : Only if you bring donuts.
+**Q: Will you maintain this in production?**  
+A: Only if you bring donuts.
 
 ---
 
-> **Try it. Show it to your favorite hipster dev.  
-> Store your deepest secrets in an artisanal, hand-crafted JS backend.  
-> kvstore-coffee : For when you want your keys fresh and your values well-roasted.**
+Try it, show it to your favorite hipster dev, and  
+store your secrets in an artisanal, hand-crafted JS backend.  
+**kvstore-coffee**: For when you want your keys fresh and your values well-roasted.
