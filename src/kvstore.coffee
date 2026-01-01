@@ -41,9 +41,21 @@ handleRequest = (req, res) ->
   else if cmd == 'STATS'
     res.end JSON.stringify(Storage.stats())
 
+  # Route: /latte (hipster-only Easter egg)
+  else if cmd == 'LATTE'
+    recipe =
+      beverage: "Caffè Latte"
+      ingredients: ["espresso", "steamed milk", "a touch of foam"]
+      size: "Grande"
+      caffeine: "enough to fuel your hackathon"
+      vibes: "hipster-certified"
+    res.end JSON.stringify(recipe)
+
   # Any other route: show usage error
   else
-    res.end JSON.stringify(error: "Usage: /set?key=foo&val=bar[&ttl=30] | /get?key=foo | /del?key=foo | /all | /clear | /stats")
+    res.end JSON.stringify(
+      error: "Usage: /set?key=foo&val=bar[&ttl=30] | /get?key=foo | /del?key=foo | /all | /clear | /stats | /latte"
+    )
 
 server = http.createServer handleRequest
 
@@ -57,3 +69,4 @@ server.listen port, ->
   console.log "  curl 'http://127.0.0.1:3000/clear'"
   console.log "  curl 'http://127.0.0.1:3000/del?key=mykey'"
   console.log "  curl 'http://127.0.0.1:3000/stats'"
+  console.log "  curl 'http://127.0.0.1:3000/latte'    # Get your barista JSON (Easter egg!)"
