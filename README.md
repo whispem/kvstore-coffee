@@ -2,8 +2,7 @@
 
 ![Not Sponsored by Starbucks](https://img.shields.io/badge/Not%20Sponsored%20by-Starbucks%E2%84%A2-brightgreen?logo=starbucks)
 
-A minimalist Key/Value Store server built in pure CoffeeScript.  
-Because the name made me laugh, and sometimes that's all the reason you need.
+### A minimalist **Key/Value Store server**... in pure CoffeeScript, *just because the name is too good to pass up.*
 
 ---
 
@@ -24,6 +23,7 @@ Because the name made me laugh, and sometimes that's all the reason you need.
 ---
 
 ## ☕️ Why CoffeeScript?
+Because... CoffeeScript.
 - The name alone deserves a project
 - No curly braces, no semicolons: pure indentation
 - JavaScript, but hipster
