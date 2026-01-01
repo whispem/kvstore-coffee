@@ -1,8 +1,12 @@
 # ☕️ kvstore-coffee
 
+![Not Sponsored by Starbucks](https://img.shields.io/badge/Not%20Sponsored%20by-Starbucks%E2%84%A2-brightgreen?logo=starbucks)
+
 ### A minimalist **Key/Value Store server**... in pure CoffeeScript, *just because the name is too good to pass up.*
 
 ---
+
+![coffee](https://em-content.zobj.net/source/microsoft-teams/363/hot-beverage_2615-fe0f.png)
 
 > **Ever dreamed of storing your data in a delicious, barista-grade backend?  
 > Tired of boring, modern languages and wanted some retro-fun fueled by JavaScript’s most aromatic cousin?  
@@ -18,6 +22,7 @@
 - 🧹 `/clear` – spill your cup, erase everything.
 - 📊 `/stats` – because every barista needs to know how many keys are in the pot.
 - 🤖 *Test suite* – because even joke projects deserve real tests.
+- 🥤 **/latte (Easter egg)** – just for those who crave some caffeinated JSON.
 
 ## ☕️ Why CoffeeScript?
 Because... CoffeeScript.
@@ -32,7 +37,7 @@ Because... CoffeeScript.
 
 ```bash
 npm install -g coffeescript
-git clone https://github.com/whispem/kvstore-coffee.git
+git clone https://github.com/yourname/kvstore-coffee.git
 cd kvstore-coffee
 npm start
 ```
@@ -53,6 +58,28 @@ curl "http://127.0.0.1:3000/del?key=foo"                  # Delete foo
 curl "http://127.0.0.1:3000/all"                          # Get all keys/values
 curl "http://127.0.0.1:3000/stats"                        # Some ‘productivity’ stats
 curl "http://127.0.0.1:3000/clear"                        # Pour out your data
+
+# Easter egg
+curl "http://127.0.0.1:3000/latte"                        # Get your barista JSON
+```
+
+---
+
+## 🥤 /latte Endpoint
+
+Ever needed an artisanal JSON latte?  
+This project has an **`/latte`** endpoint, which returns a hand-crafted beverage recipe in JSON –  
+because *why not* ?
+
+Example response:
+```json
+{
+  "beverage": "Caffè Latte",
+  "ingredients": ["espresso", "steamed milk", "a touch of foam"],
+  "size": "Grande",
+  "caffeine": "enough to fuel your hackathon",
+  "vibes": "hipster-certified"
+}
 ```
 
 ---
@@ -76,6 +103,14 @@ coffee test/kvstore_spec.coffee
 - `src/utils.coffee`   — Helper espresso shots (key/value validators)
 - `test/` — Where we check the blend
 - `scripts/` — Backup/restore tools for true connoisseurs
+
+---
+
+## ⚠️ Disclaimer
+
+☕️ *Not sponsored by Starbucks™, but we’re open to free macchiatos.*  
+All resemblance to coffee chains is purely coincidental.  
+Any caffeine-fueled bugs are not endorsed (or compensated) by Starbucks, unfortunately.
 
 ---
 
