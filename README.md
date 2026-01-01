@@ -1,6 +1,7 @@
 # ☕️ kvstore-coffee
 
 ![Not Sponsored by Starbucks](https://img.shields.io/badge/Not%20Sponsored%20by-Starbucks%E2%84%A2-brightgreen?logo=starbucks)
+![If you don’t get the joke, this repo isn’t for you.](https://img.shields.io/badge/If%20you%20don%E2%80%99t%20get%20the%20joke-this%20repo%20isn%E2%80%99t%20for%20you.-blueviolet)
 
 ### A minimalist **Key/Value Store server**... in pure CoffeeScript, *just because the name is too good to pass up.*
 
