@@ -1,0 +1,12 @@
+{
+  "name": "kvstore-coffee",
+  "version": "0.1.0",
+  "main": "src/kvstore.coffee",
+  "scripts": {
+    "start": "coffee src/kvstore.coffee",
+    "test": "coffee test/kvstore_spec.coffee"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "description": "Minimalist HTTP kvstore in CoffeeScript"
+}
