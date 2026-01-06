@@ -36,7 +36,7 @@ Because... CoffeeScript.
 
 ```bash
 npm install -g coffeescript
-git clone https://github.com/yourname/kvstore-coffee.git
+git clone https://github.com/whispem/kvstore-coffee.git
 cd kvstore-coffee
 npm start
 ```
